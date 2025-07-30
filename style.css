@@ -1,0 +1,56 @@
+/* Responsive layout with 16:9 aspect ratio and minimalist style */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #4caf50;
+}
+
+#counter {
+  margin: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+#game {
+  position: relative;
+  width: 90vw;
+  max-width: 1024px;
+  aspect-ratio: 16 / 9;
+  background: url('background.png') center/cover no-repeat;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cat {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: none;
+  transition: filter 0.3s;
+}
+
+.cat.found {
+  filter: grayscale(100%) brightness(0.7);
+}
