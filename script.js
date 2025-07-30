@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const gameWidth = game.clientWidth;
     const gameHeight = game.clientHeight;
-    const catSize = 50;
+    const catSize = 80;
 
     const x = Math.random() * (gameWidth - catSize);
     const y = Math.random() * (gameHeight - catSize);
